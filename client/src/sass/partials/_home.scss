@@ -1,0 +1,195 @@
+.home {
+  h2 {
+    &::before {
+      display: block;
+      content: " ";
+      height: 86px;
+      /* Give height of your fixed element */
+      margin-top: -86px;
+      /* Give negative margin of your fixed element */
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+}
+
+// Header Image
+.introduction {
+  height: 75vh;
+  background-color: skyblue;
+  background: url("https://i.pinimg.com/originals/84/cf/2b/84cf2b530af74542f7b75370982588df.jpg") no-repeat center;
+  background-size: cover;
+  .overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    .container  {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  }
+
+  .btn-link {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: none;
+
+    &:hover {
+      border: 1px solid #ffcc00;
+      color: #ffcc00;
+      text-decoration: none;
+    }
+  }
+
+  form {
+    font-size: 16px;
+    color: #000;
+
+    input {
+      padding: 5px 10px;
+      border: none;
+      width: 100%;
+    }
+
+    #submit {
+      background-color: #ffcc00;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+#why-abroad span {
+  height: 24px;
+  width: 24px;
+  background-color: #ffcc00;
+  margin-right: 6px;
+}
+
+#how-it-works {
+  border-top: 15px solid #ffcc00;
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+
+  > div {
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+
+    iframe {
+      width: 100%;
+      height: 192px;
+    }
+  }
+}
+
+#h-pricing span {
+  &:first-of-type {
+    color: #ffcc00;
+    font-size: 2.25rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.package {
+  margin-bottom: 15px;
+  border: 1px solid #ffcc00;
+  border-top: none;
+  box-sizing: border-box;
+
+  > div {
+    background-color: #ffcc00;
+    box-sizing: border-box;
+    width: 100%;
+
+    .btn-default {
+      letter-spacing: 0.5px;
+      font-size: 14px;
+      font-weight: 600;
+
+      &:hover {
+        color: #ffcc00;
+      }
+    }
+  }
+
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .name {
+    /* border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff; */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    margin-bottom: 0;
+  }
+
+  .icon-check {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    margin-right: 4px;
+  }
+}
+
+@media (min-width: 576px) {
+  .introduction form input {
+    width: 40%;
+  }
+
+  #how-it-works > div iframe {
+    height: 275px;
+  }
+}
+
+@media (min-width: 768px) {
+  .introduction form input {
+    max-width: 200px;
+  }
+
+  #how-it-works > div iframe {
+    height: 420px;
+    width: 650px;
+  }
+
+  .pricing {
+    display: flex;
+
+    > div {
+      width: 33.3333%;
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  .introduction {
+    height: 90vh;
+
+    h1 {
+      font-size: 65px;
+    }
+  }
+
+  #h-pricing span {
+    &:first-of-type {
+      font-size: 2.5rem;
+    }
+  }
+}

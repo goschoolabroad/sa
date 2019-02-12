@@ -1,0 +1,74 @@
+
+// let Schools = require("./app/models/Schools.js");
+
+// let school = new Schools({
+// 	name: "Canadian University Dubai",
+//   logo: "../assets/canadian-u-d.png",
+//   bgImage: "../assets/delfi-de-la-rua-140752-unsplash.jpg",
+// 	address: "Dubai - United Arab Emirates",
+// 	description: "Canadian University Dubai, founded in 2006, is located in the heart of Dubai. Each of our academic programs is based on Canadian Curriculum and education principles. This gives students the opportunity of a Canadian education while respecting the culture and values of the United Arab Emirates. With over 90 different nationalities that call our University home, our students are building bridges across cultures and continents. Our goal is to move each student forward as a well-rounded lifelong learner and good global citizen. To achieve this, emphasis is placed not just on academic achievement, but also on extracurricular involvement. Our vibrant student life provides activities from sports to concerts, various international trips in between, in many types of social events including community fundraising, team building and networking events.",
+// 	tuition_fee : {
+//       intl_undergraduate: "USD 20,000",
+//         intl_postgraduate: "USD 30,000",
+//         dom_undergraduate: "USD 20,000",
+//         dom_postgraduate: "USD 30,000"
+//   },
+//   score_req: [
+//     "Minimum TOEFL score - PBT500 (or 61 iBT)",
+//     "Minimum IELTS score - 5.00",
+//     "Minimum PTE - A - 36"
+//   ],
+// 	room_board: "USD 2,000",
+// 	total_students: 1183,
+// 	intl_students: 77,
+// 	female_male_ratio: "",
+// 	student_fac_ratio: "11:1",
+// 	campus_type: "Private",
+// 	rankings : {
+// 			the: null,
+// 			forbes: null,
+// 			usnews: null,
+// 			arwu: null,
+// 			qs: null
+// 	},
+// 	programs: [],
+// 	map: ""
+// });
+
+// school.save(err => {
+// 	if (err) console.log(err);
+// });
+
+// let school_2 = new Schools({
+// 	name: "Princeton University",
+//   logo: "../assets/princeton_shield.svg",
+//   bgImage: "../assets/princeton_u.jpg",
+// 	address: "Princeton University, New Jersey, United States",
+// 	description: "Princeton University is a private, coeducational, nondenominational research university located in Princeton, New Jersey. One of eight universities of the Ivy League, it is the fourth-oldest university in the United States. As a liberal arts institution that is home to a vibrant community, Princeton is committed to enrolling students of all backgrounds and interests and also in ensuring that admitted students can afford college by offering one of the strongest need-based financial aid programs in the country.",
+// 	tuition_fee : {
+//       intl_undergraduate: "USD 49,330",
+//         intl_postgraduate: "USD 49,330",
+//         dom_undergraduate: "USD 49,330",
+//         dom_postgraduate: "USD 49,330"
+//   },
+//   score_req: [],
+// 	room_board: "USD 16,290",
+// 	total_students: 5394,
+// 	intl_students: 12,
+// 	female_male_ratio: "49:51",
+// 	student_fac_ratio: "5:1",
+// 	campus_type: "Private",
+// 	rankings : {
+// 			the: 7,
+// 			forbes: 5,
+// 			usnews: 1,
+// 			arwu: 6,
+// 			qs: 13
+// 	},
+// 	programs: [],
+// 	map: ""
+// });
+
+// school_2.save(err => {
+// 	if (err) console.log(err);
+// });
