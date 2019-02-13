@@ -41,11 +41,11 @@ app.use(bodyParser.json());
 
 routes(app);
 
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/tether', express.static(__dirname + '/node_modules/tether/dist/js'));
-app.use('/popper', express.static(__dirname + '/node_modules/popper.js/dist/umd')); 
-app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
-app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use('/tether', express.static('../../node_modules/tether/dist/js'));
+app.use('/popper', express.static('../../node_modules/popper.js/dist/umd')); 
+app.use('/bootstrap', express.static('../../node_modules/bootstrap/dist/js')); // redirect bootstrap JS
+app.use('/jquery', express.static('../../node_modules/jquery/dist')); // redirect JS jQuery
 
 // fs.readFile('client/src/sass/main.css', function (err, css) { 
 //   if (err) {
